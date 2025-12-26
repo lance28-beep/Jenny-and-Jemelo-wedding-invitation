@@ -42,12 +42,12 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
       {/* Elegant layered background with depth */}
       <div className="absolute inset-0">
         {/* Base gradient */}
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,#5B6B3C_0%,#6A4F82_25%,#B9AACB_50%,#A8AF8D_75%,#6A4F82_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,#848B69_0%,#848B69_25%,#A4AD92_50%,#A4AD92_75%,#848B69_100%)]" />
         
         {/* Radial overlays for depth */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#B9AACB_0%,transparent_50%)] opacity-60 animate-pulse" style={{ animationDuration: '4s' }} />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,#6A4F82_0%,transparent_50%)] opacity-50 animate-pulse" style={{ animationDuration: '5s', animationDelay: '1s' }} />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#A8AF8D_0%,transparent_60%)] opacity-40 animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#A4AD92_0%,transparent_50%)] opacity-60 animate-pulse" style={{ animationDuration: '4s' }} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,#848B69_0%,transparent_50%)] opacity-50 animate-pulse" style={{ animationDuration: '5s', animationDelay: '1s' }} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#A4AD92_0%,transparent_60%)] opacity-40 animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }} />
         
         {/* Vignette effect */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
@@ -61,25 +61,25 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
 
       {/* Floating decorative elements */}
       <div className="hidden sm:block absolute top-20 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-ping" style={{ animationDuration: '3s' }} />
-      <div className="hidden sm:block absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-[#B9AACB]/40 rounded-full animate-ping" style={{ animationDuration: '4s', animationDelay: '1s' }} />
-      <div className="hidden sm:block absolute bottom-1/3 left-1/3 w-2.5 h-2.5 bg-[#A8AF8D]/30 rounded-full animate-ping" style={{ animationDuration: '5s', animationDelay: '2s' }} />
+      <div className="hidden sm:block absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-[#A4AD92]/40 rounded-full animate-ping" style={{ animationDuration: '4s', animationDelay: '1s' }} />
+      <div className="hidden sm:block absolute bottom-1/3 left-1/3 w-2.5 h-2.5 bg-[#A4AD92]/30 rounded-full animate-ping" style={{ animationDuration: '5s', animationDelay: '2s' }} />
 
       <div className="relative flex flex-col items-center justify-center px-4 sm:px-8">
         {/* Main content container with elegant frame */}
         <div className="relative">
           {/* Elegant glow effects - responsive sizing */}
           <div className="absolute -inset-12 sm:-inset-20 bg-gradient-radial from-white/20 via-white/5 to-transparent blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
-          <div className="absolute -inset-10 sm:-inset-16 bg-gradient-radial from-[#B9AACB]/20 via-[#B9AACB]/5 to-transparent blur-2xl animate-pulse" style={{ animationDuration: '4s', animationDelay: '0.5s' }} />
+          <div className="absolute -inset-10 sm:-inset-16 bg-gradient-radial from-[#A4AD92]/20 via-[#A4AD92]/5 to-transparent blur-2xl animate-pulse" style={{ animationDuration: '4s', animationDelay: '0.5s' }} />
           
           <div className="relative flex items-center justify-center">
             {/* Sophisticated decorative rings with staggered animations - responsive sizing */}
             <div className="absolute w-40 sm:w-56 h-40 sm:h-56 rounded-full border border-white/10 animate-ping" style={{ animationDuration: '3s' }} />
-            <div className="absolute w-36 sm:w-48 h-36 sm:h-48 rounded-full border border-[#F4F4F4]/20 animate-[spin_10s_linear_infinite]" />
-            <div className="absolute w-32 sm:w-44 h-32 sm:h-44 rounded-full border-2 border-[#B9AACB]/30 animate-[spin_15s_linear_infinite]">
+            <div className="absolute w-36 sm:w-48 h-36 sm:h-48 rounded-full border border-[#F4F5F0]/20 animate-[spin_10s_linear_infinite]" />
+            <div className="absolute w-32 sm:w-44 h-32 sm:h-44 rounded-full border-2 border-[#A4AD92]/30 animate-[spin_15s_linear_infinite]">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white/50 rounded-full" />
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white/50 rounded-full" />
             </div>
-            <div className="absolute w-28 sm:w-40 h-28 sm:h-40 rounded-full border-t-2 border-b-2 border-[#A8AF8D]/40 animate-[spin_20s_linear_infinite_reverse]" />
+            <div className="absolute w-28 sm:w-40 h-28 sm:h-40 rounded-full border-t-2 border-b-2 border-[#A4AD92]/40 animate-[spin_20s_linear_infinite_reverse]" />
             <div className="hidden sm:block absolute w-36 h-36 rounded-full border border-dashed border-white/15 animate-[spin_25s_linear_infinite]" />
 
             {/* Inner glow */}
@@ -91,8 +91,8 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               <div className="relative w-28 sm:w-40 h-28 sm:h-40 brightness-0 invert">
                 <div className="absolute inset-0 blur-xl bg-white/30" />
                 <Image
-                  src="/monogram/monogram.png"
-                  alt="Catherine & Mark Monogram"
+                  src="/monogram/Monogram.png"
+                  alt="Jemelo & Jenny Monogram"
                   fill
                   className="object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.5)]"
                   priority
@@ -147,7 +147,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
             className="text-base sm:text-xl tracking-[0.12em] sm:tracking-[0.15em] text-white/90 mb-4 sm:mb-6"
             style={{ fontFamily: '"Cinzel", serif', fontWeight: 400 }}
           >
-            Catherine & Mark
+            Jemelo & Jenny
           </p>
 
           {/* Elegant progress bar - responsive */}

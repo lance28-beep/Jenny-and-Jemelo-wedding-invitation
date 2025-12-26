@@ -69,10 +69,10 @@ export function DashboardSidebar({
       {/* Logo/Header */}
       <div className="p-6 border-b border-[#E5E7EB]">
         <div className="flex items-center gap-2 mb-2">
-          <div className="w-8 h-8 bg-[#A67C52] rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-[#848B69] rounded-lg flex items-center justify-center">
             <span className="text-white font-serif text-lg">♥</span>
           </div>
-          <span className="font-serif text-lg font-bold text-[#6B4423]">Wedding Invitation</span>
+          <span className="font-serif text-lg font-bold text-[#848B69]">Wedding Invitation</span>
         </div>
         <p className="text-xs text-[#6B7280] uppercase tracking-wide">Dashboard Panel</p>
       </div>
@@ -90,11 +90,11 @@ export function DashboardSidebar({
               className={cn(
                 "w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 group relative",
                 isActive
-                  ? "bg-[#FFF8F0] text-[#6B4423] shadow-sm"
-                  : "text-[#6B7280] hover:bg-[#F9FAFB] hover:text-[#6B4423]"
+                  ? "bg-[#F4F5F0] text-[#848B69] shadow-sm"
+                  : "text-[#6B7280] hover:bg-[#F9FAFB] hover:text-[#848B69]"
               )}
             >
-              <Icon className={cn("h-5 w-5 transition-colors", isActive ? "text-[#A67C52]" : "text-[#9CA3AF] group-hover:text-[#A67C52]")} />
+              <Icon className={cn("h-5 w-5 transition-colors", isActive ? "text-[#848B69]" : "text-[#9CA3AF] group-hover:text-[#848B69]")} />
               <span className="flex-1 text-left">{item.label}</span>
               {item.badge !== null && item.badge > 0 && (
                 <span className={cn(
@@ -115,7 +115,7 @@ export function DashboardSidebar({
           href="https://docs.google.com/spreadsheets/d/1FFZyjST4JiyX1T5YxHkJPa-dYPNsSKKhE0S0xfVk6e4/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium text-[#6B7280] hover:text-[#6B4423] hover:bg-[#F9FAFB] border border-[#E5E7EB] transition-all duration-200 justify-start"
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium text-[#6B7280] hover:text-[#848B69] hover:bg-[#F9FAFB] border border-[#E5E7EB] transition-all duration-200 justify-start"
         >
           <RefreshCw className="h-4 w-4" />
           <span>Sync Spreadsheet</span>

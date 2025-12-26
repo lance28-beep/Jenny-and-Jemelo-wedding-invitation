@@ -307,7 +307,7 @@ export function WeddingDetailsEditor() {
             variant="outline"
             size="sm"
             disabled={isLoading || isSaving || isDeleting}
-            className="border-[#E5E7EB] text-[#6B7280] hover:text-[#6B4423] hover:border-[#A67C52]"
+            className="border-[#E5E7EB] text-[#6B7280] hover:text-[#848B69] hover:border-[#848B69]"
           >
             <RefreshCw className={`h-4 w-4 mr-2 ${isLoading ? "animate-spin" : ""}`} />
             Refresh
@@ -326,7 +326,7 @@ export function WeddingDetailsEditor() {
             onClick={handleSave}
             disabled={isSaving || isLoading || isDeleting || !hasChanges}
             size="sm"
-            className="bg-gradient-to-r from-[#8B6F47] to-[#6B5335] hover:from-[#6B5335] hover:to-[#8B6F47] text-white disabled:opacity-50"
+            className="bg-gradient-to-r from-[#848B69] to-[#848B69] hover:from-[#848B69] hover:to-[#848B69] text-white disabled:opacity-50"
           >
             {isSaving ? (
               <>
@@ -421,8 +421,8 @@ export function WeddingDetailsEditor() {
         <TabsContent value="couple" className="space-y-6">
           <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#FFF8F0] rounded-lg flex items-center justify-center">
-                <Users className="h-5 w-5 text-[#8B6F47]" />
+              <div className="w-10 h-10 bg-[#F4F5F0] rounded-lg flex items-center justify-center">
+                <Users className="h-5 w-5 text-[#848B69]" />
               </div>
               <h3 className="text-xl font-bold text-[#111827]">Couple Information</h3>
             </div>
@@ -437,7 +437,7 @@ export function WeddingDetailsEditor() {
                       value={weddingDetails.couple.groom}
                       onChange={(e) => updateField("couple.groom", e.target.value)}
                       placeholder="Enter groom's full name"
-                      className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                      className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                     />
                     {weddingDetails.couple.groom && (
                       <button
@@ -459,7 +459,7 @@ export function WeddingDetailsEditor() {
                       value={weddingDetails.couple.groomNickname}
                       onChange={(e) => updateField("couple.groomNickname", e.target.value)}
                       placeholder="Enter nickname"
-                      className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                      className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                     />
                     {weddingDetails.couple.groomNickname && (
                       <button
@@ -483,7 +483,7 @@ export function WeddingDetailsEditor() {
                       value={weddingDetails.couple.bride}
                       onChange={(e) => updateField("couple.bride", e.target.value)}
                       placeholder="Enter bride's full name"
-                      className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                      className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                     />
                     {weddingDetails.couple.bride && (
                       <button
@@ -505,7 +505,7 @@ export function WeddingDetailsEditor() {
                       value={weddingDetails.couple.brideNickname}
                       onChange={(e) => updateField("couple.brideNickname", e.target.value)}
                       placeholder="Enter nickname"
-                      className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                      className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                     />
                     {weddingDetails.couple.brideNickname && (
                       <button
@@ -527,8 +527,8 @@ export function WeddingDetailsEditor() {
         <TabsContent value="wedding" className="space-y-6">
           <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#FFF8F0] rounded-lg flex items-center justify-center">
-                <Heart className="h-5 w-5 text-[#8B6F47]" />
+              <div className="w-10 h-10 bg-[#F4F5F0] rounded-lg flex items-center justify-center">
+                <Heart className="h-5 w-5 text-[#848B69]" />
               </div>
               <h3 className="text-xl font-bold text-[#111827]">Wedding Information</h3>
             </div>
@@ -542,7 +542,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.wedding.date}
                     onChange={(e) => updateField("wedding.date", e.target.value)}
                     placeholder="e.g., December 28, 2025"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                    className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                   />
                   {weddingDetails.wedding.date && (
                     <button
@@ -564,7 +564,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.wedding.venue}
                     onChange={(e) => updateField("wedding.venue", e.target.value)}
                     placeholder="Enter main venue name"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                    className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                   />
                   {weddingDetails.wedding.venue && (
                     <button
@@ -586,7 +586,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.wedding.tagline}
                     onChange={(e) => updateField("wedding.tagline", e.target.value)}
                     placeholder="Enter a memorable tagline"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                    className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                   />
                   {weddingDetails.wedding.tagline && (
                     <button
@@ -607,7 +607,7 @@ export function WeddingDetailsEditor() {
                       value={weddingDetails.theme}
                       onChange={(e) => updateField("theme", e.target.value)}
                       placeholder="e.g., Classic Elegance"
-                      className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                      className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                     />
                     {weddingDetails.theme && (
                       <button
@@ -629,7 +629,7 @@ export function WeddingDetailsEditor() {
                       value={weddingDetails.hashtag}
                       onChange={(e) => updateField("hashtag", e.target.value)}
                       placeholder="e.g., #YourHashtag2025"
-                      className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                      className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                     />
                     {weddingDetails.hashtag && (
                       <button
@@ -666,7 +666,7 @@ export function WeddingDetailsEditor() {
                   value={weddingDetails.ceremony.venue}
                   onChange={(e) => updateField("ceremony.venue", e.target.value)}
                   placeholder="Minglanilla Church"
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div>
@@ -675,7 +675,7 @@ export function WeddingDetailsEditor() {
                   value={weddingDetails.ceremony.address}
                   onChange={(e) => updateField("ceremony.address", e.target.value)}
                   placeholder="Minglanilla, Cebu"
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -685,7 +685,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.ceremony.time}
                     onChange={(e) => updateField("ceremony.time", e.target.value)}
                     placeholder="2:00 PM"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                    className="border-[#E5E7EB] focus:ring-[#848B69]"
                   />
                 </div>
                 <div>
@@ -696,7 +696,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.ceremony.googleMapsUrl}
                     onChange={(e) => updateField("ceremony.googleMapsUrl", e.target.value)}
                     placeholder="https://maps.google.com/..."
-                    className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                    className="border-[#E5E7EB] focus:ring-[#848B69]"
                   />
                 </div>
               </div>
@@ -720,7 +720,7 @@ export function WeddingDetailsEditor() {
                   value={weddingDetails.reception.venue}
                   onChange={(e) => updateField("reception.venue", e.target.value)}
                   placeholder="Minglanilla Sports Complex"
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div>
@@ -729,7 +729,7 @@ export function WeddingDetailsEditor() {
                   value={weddingDetails.reception.address}
                   onChange={(e) => updateField("reception.address", e.target.value)}
                   placeholder="Minglanilla, Cebu"
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -739,7 +739,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.reception.time}
                     onChange={(e) => updateField("reception.time", e.target.value)}
                     placeholder="5:00 PM"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                    className="border-[#E5E7EB] focus:ring-[#848B69]"
                   />
                 </div>
                 <div>
@@ -750,7 +750,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.reception.googleMapsUrl}
                     onChange={(e) => updateField("reception.googleMapsUrl", e.target.value)}
                     placeholder="https://maps.google.com/..."
-                    className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                    className="border-[#E5E7EB] focus:ring-[#848B69]"
                   />
                 </div>
               </div>
@@ -762,8 +762,8 @@ export function WeddingDetailsEditor() {
         <TabsContent value="narratives" className="space-y-6">
           <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#FFF8F0] rounded-lg flex items-center justify-center">
-                <Edit2 className="h-5 w-5 text-[#8B6F47]" />
+              <div className="w-10 h-10 bg-[#F4F5F0] rounded-lg flex items-center justify-center">
+                <Edit2 className="h-5 w-5 text-[#848B69]" />
               </div>
               <h3 className="text-xl font-bold text-[#111827]">Love Stories & Narratives</h3>
             </div>
@@ -777,7 +777,7 @@ export function WeddingDetailsEditor() {
                   onChange={(e) => updateField("narratives.bride", e.target.value)}
                   placeholder="Tell us about the bride..."
                   rows={4}
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div>
@@ -789,7 +789,7 @@ export function WeddingDetailsEditor() {
                   onChange={(e) => updateField("narratives.groom", e.target.value)}
                   placeholder="Tell us about the groom..."
                   rows={4}
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div>
@@ -801,7 +801,7 @@ export function WeddingDetailsEditor() {
                   onChange={(e) => updateField("narratives.shared", e.target.value)}
                   placeholder="Tell us your love story..."
                   rows={6}
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
             </div>
@@ -812,8 +812,8 @@ export function WeddingDetailsEditor() {
         <TabsContent value="details" className="space-y-6">
           <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-[#FFF8F0] rounded-lg flex items-center justify-center">
-                <Calendar className="h-5 w-5 text-[#8B6F47]" />
+              <div className="w-10 h-10 bg-[#F4F5F0] rounded-lg flex items-center justify-center">
+                <Calendar className="h-5 w-5 text-[#848B69]" />
               </div>
               <h3 className="text-xl font-bold text-[#111827]">Additional Details</h3>
             </div>
@@ -826,7 +826,7 @@ export function WeddingDetailsEditor() {
                   value={weddingDetails.dressCode.theme}
                   onChange={(e) => updateField("dressCode.theme", e.target.value)}
                   placeholder="Formal Attire"
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div>
@@ -838,7 +838,7 @@ export function WeddingDetailsEditor() {
                   onChange={(e) => updateField("dressCode.note", e.target.value)}
                   placeholder="Please wear formal attire in shades of cream, beige, or earth tones."
                   rows={3}
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
               <div>
@@ -849,7 +849,7 @@ export function WeddingDetailsEditor() {
                   value={weddingDetails.details.rsvp.deadline}
                   onChange={(e) => updateField("details.rsvp.deadline", e.target.value)}
                   placeholder="December 15, 2025"
-                  className="border-[#E5E7EB] focus:ring-[#A67C52]"
+                  className="border-[#E5E7EB] focus:ring-[#848B69]"
                 />
               </div>
             </div>
@@ -875,7 +875,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.contact.bridePhone}
                     onChange={(e) => updateField("contact.bridePhone", e.target.value)}
                     placeholder="+63 123 456 7890"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                    className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                   />
                   {weddingDetails.contact.bridePhone && (
                     <button
@@ -897,7 +897,7 @@ export function WeddingDetailsEditor() {
                     value={weddingDetails.contact.groomPhone}
                     onChange={(e) => updateField("contact.groomPhone", e.target.value)}
                     placeholder="+63 123 456 7890"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                    className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                   />
                   {weddingDetails.contact.groomPhone && (
                     <button
@@ -920,7 +920,7 @@ export function WeddingDetailsEditor() {
                     onChange={(e) => updateField("contact.email", e.target.value)}
                     placeholder="wedding@example.com"
                     type="email"
-                    className="border-[#E5E7EB] focus:ring-[#A67C52] pr-10"
+                    className="border-[#E5E7EB] focus:ring-[#848B69] pr-10"
                   />
                   {weddingDetails.contact.email && (
                     <button

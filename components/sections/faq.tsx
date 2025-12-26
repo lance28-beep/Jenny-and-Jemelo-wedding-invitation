@@ -25,12 +25,12 @@ const faqItems: FAQItem[] = [
   {
     question: "Where will the ceremony and reception take place?",
     answer:
-      `The ceremony will be held at ${siteConfig.ceremony.location}. The reception will follow at ${siteConfig.reception.location}. You can find detailed directions, addresses, and maps in the Details section above.`,
+      `The ceremony will be held at ${siteConfig.ceremony.venue} (${siteConfig.ceremony.location}). The reception will follow at ${siteConfig.reception.venue} (${siteConfig.reception.location}) at ${siteConfig.reception.time}. You can find detailed directions, addresses, and maps in the Details section above.`,
   },
   {
     question: "What time should I arrive?",
     answer:
-      `Kindly arrive by ${siteConfig.ceremony.guestsTime} so we can begin the ceremony promptly at exactly ${siteConfig.ceremony.time}. The entourage will arrive at ${siteConfig.ceremony.entourageTime}. Your punctuality means so much to us!`,
+      `Kindly arrive by ${siteConfig.ceremony.guestsTime} so we can begin the wedding ceremony promptly at exactly ${siteConfig.ceremony.time}. The entourage will arrive at ${siteConfig.ceremony.entourageTime}. Your punctuality means so much to us — and don't forget to have a light snack beforehand so you can enjoy the celebration comfortably!`,
   },
   {
     question: "How do I RSVP?",
@@ -40,12 +40,12 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I bring a plus one or additional guests?",
     answer:
-      "Each invitation includes a specific number of reserved seats. Please check your invitation details in the RSVP section. If you need to request additional seats, you can use the 'Request to Join' feature, and we'll do our best to accommodate based on availability.",
+      "The seating will be formal, RSVP-style. That's why we're asking you to fill out this invitation form to secure your spot. Kindly do not bring plus ones unless explicitly stated in your invitation. Please check your invitation details in the RSVP section.",
   },
   {
     question: "Is there a dress code?",
     answer:
-      `Yes! We kindly request our guests to dress in formal attire matching our Purple & Sage motif. Please see the Attire section in Details for specific guidelines:\n\nPrincipal Sponsors:\n• Male: ${siteConfig.dressCode.sponsors.male}\n• Female: ${siteConfig.dressCode.sponsors.female}\n\nGuests:\n• Gents: ${siteConfig.dressCode.guests.gents}\n• Ladies: ${siteConfig.dressCode.guests.ladies}`,
+      `Yes! We kindly request our guests to dress in formal attire matching our ${siteConfig.dressCode.theme}. Please dress within our wedding color palette: Sage Green (#848B69, #A4AD92), Blush Pink (#E8BBB8, #F3D8DD), and Cream (#F4F5F0) to help create a soft, elegant romantic celebration. Please see the Attire section in Details for specific guidelines:\n\nPrincipal Sponsors:\n• Male: ${siteConfig.dressCode.sponsors.male}\n• Female: ${siteConfig.dressCode.sponsors.female}\n\nGuests:\n• Gents: ${siteConfig.dressCode.guests.gents}\n• Ladies: ${siteConfig.dressCode.guests.ladies}`,
   },
   {
     question: "Will there be assigned seating?",
@@ -55,17 +55,17 @@ const faqItems: FAQItem[] = [
   {
     question: "Is there parking available?",
     answer:
-      "Yes, parking is available at both venues. Please follow the parking signs and instructions from our venue coordinators.",
+      "Yes, parking is available at the venue. Please arrive early to find a comfortable spot. Plan your route ahead to avoid unexpected delays.",
   },
   {
     question: "What should I give as a gift?",
     answer:
-      "With all that we have, we are truly blessed. Your presence and prayers are what we request most. However, if you desire to give nonetheless, a monetary gift to help us begin our new life together would be humbly appreciated. You can find our gift registry information in the Gift Guide section.",
+      "The biggest gift to us is your support and presence at our wedding. Please do not feel obligated to give anything else. However, should you feel inclined, we are very much looking forward to our honeymoon and any contribution towards that will always be sincerely appreciated.",
   },
   {
     question: "Can I take photos and videos during the ceremony?",
     answer:
-      "We have a professional photographer and videographer capturing our special moments. We kindly ask that you keep your phones on silent and refrain from taking photos during the ceremony. However, we'd love to see your photos and videos from the reception! Please check the Snap & Share section for details on how to upload them.",
+      `We have a professional photographer and videographer capturing our special moments. We kindly ask that you keep your phones on silent and refrain from taking photos during the ceremony. However, we'd love to see your photos and videos from the reception! Please check the Snap & Share section to upload them to our Google Drive folder. Don't forget to use our wedding hashtags: ${siteConfig.snapShare.hashtag}, #JemeloAndJennyWedding, and #JemeloJennyForever when sharing on social media!`,
   },
   {
     question: "What if I have dietary restrictions or allergies?",
@@ -89,14 +89,14 @@ export function FAQ() {
   return (
     <Section
       id="faq"
-      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#6A4F82]"
+      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#848B69]"
     >
       {/* Background elements with purple & sage motif */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Subtle gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#6A4F82]/85 via-[#B9AACB]/60 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#6A4F82]/90 via-[#B9AACB]/55 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(185,170,203,0.22),transparent_55%)] opacity-80" />
+        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#848B69]/85 via-[#A4AD92]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#848B69]/90 via-[#A4AD92]/55 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(164,173,146,0.22),transparent_55%)] opacity-80" />
       </div>
 
       {/* Section Header */}
@@ -127,8 +127,8 @@ export function FAQ() {
       {/* FAQ content */}
       <div className="relative z-30 max-w-4xl mx-auto px-3 sm:px-5">
         {/* Main card */}
-        <div className="relative bg-[#F4F4F4]/95 backdrop-blur-md border border-[#B9AACB]/60 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(106,79,130,0.3)] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#B9AACB]/10 via-transparent to-[#6A4F82]/5 pointer-events-none" />
+        <div className="relative bg-[#F4F5F0]/95 backdrop-blur-md border border-[#A4AD92]/60 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(132,139,105,0.3)] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#A4AD92]/10 via-transparent to-[#848B69]/5 pointer-events-none" />
           
           {/* FAQ items */}
           <div className="relative p-2.5 sm:p-4 md:p-5 lg:p-6">
@@ -139,20 +139,20 @@ export function FAQ() {
                 return (
                   <div
                     key={index}
-                    className="rounded-lg sm:rounded-xl border border-[#B9AACB]/40 bg-white/50 hover:border-[#6A4F82]/60 hover:bg-white/70 transition-all duration-300 overflow-hidden shadow-sm"
+                    className="rounded-lg sm:rounded-xl border border-[#A4AD92]/40 bg-white/50 hover:border-[#848B69]/60 hover:bg-white/70 transition-all duration-300 overflow-hidden shadow-sm"
                   >
                     <button
                       onClick={() => toggleItem(index)}
-                      className="group w-full px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 flex items-center justify-between text-left outline-none focus-visible:ring-2 focus-visible:ring-[#6A4F82]/50 focus-visible:ring-offset-2 transition-colors"
+                      className="group w-full px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 flex items-center justify-between text-left outline-none focus-visible:ring-2 focus-visible:ring-[#848B69]/50 focus-visible:ring-offset-2 transition-colors"
                       aria-expanded={isOpen}
                       aria-controls={contentId}
                     >
-                      <span className={`${cormorant.className} font-semibold text-[#6A4F82] pr-2 sm:pr-3 md:pr-4 text-xs sm:text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed transition-colors duration-200 group-hover:text-[#5B6B3C]`}>
+                      <span className={`${cormorant.className} font-semibold text-[#848B69] pr-2 sm:pr-3 md:pr-4 text-xs sm:text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed transition-colors duration-200 group-hover:text-[#848B69]`}>
                         {item.question}
                       </span>
                       <ChevronDown
                         size={18}
-                        className={`text-[#6A4F82]/60 flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#6A4F82]" : ""} w-4 h-4 sm:w-5 sm:h-5`}
+                        className={`text-[#848B69]/60 flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#848B69]" : ""} w-4 h-4 sm:w-5 sm:h-5`}
                         aria-hidden
                       />
                     </button>
@@ -165,13 +165,13 @@ export function FAQ() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-white/30 border-t border-[#B9AACB]/40">
+                        <div className="px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-white/30 border-t border-[#A4AD92]/40">
                           {item.answer.includes("[RSVP_LINK]") ? (
-                            <p className={`${cormorant.className} text-[#5B6B3C] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
+                            <p className={`${cormorant.className} text-[#848B69] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
                               {item.answer.split("[RSVP_LINK]")[0]}
                               <a 
                                 href="#guest-list" 
-                                className="text-[#6A4F82] underline font-bold hover:text-[#B9AACB] transition-colors"
+                                className="text-[#848B69] underline font-bold hover:text-[#A4AD92] transition-colors"
                                 onClick={(e) => {
                                   e.preventDefault()
                                   document.getElementById('guest-list')?.scrollIntoView({ behavior: 'smooth' })
@@ -182,7 +182,7 @@ export function FAQ() {
                               {item.answer.split("[/RSVP_LINK]")[1]}
                             </p>
                           ) : (
-                            <p className={`${cormorant.className} text-[#5B6B3C] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
+                            <p className={`${cormorant.className} text-[#848B69] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
                               {item.answer}
                             </p>
                           )}

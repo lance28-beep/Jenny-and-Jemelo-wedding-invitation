@@ -1,14 +1,14 @@
 export const siteConfig = {
   couple: {
-    bride: "Catherine Rivera",
-    brideNickname: "Catherine",
-    groom: "Mark Niño Cabral",
-    groomNickname: "Mark",
+    bride: "Jenny Ann S. Alibango",
+    brideNickname: "Jenny",
+    groom: "Jemelo Anton A. Ignacio",
+    groomNickname: "Jemelo",
   },
   wedding: {
-    date: "January 11, 2026",
-    time: "3:00 PM",
-    venue: "Lorenzo Farm and Resort and Events Place / Balai Alexandria Events Place",
+    date: "January 10, 2026",
+    time: "2:00 PM",
+    venue: "Cstr- Stvr San Carlos / Palau Hotel San Carlos City",
     tagline: "are getting married!",
     theme: "Purple & Sage Motif",
     motif: "#6A4F82, #B9AACB, #A8AF8D, #F4F4F4, #5B6B3C",
@@ -19,26 +19,26 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "Lorenzo Farm and Resort and Events Place, Brgy Dampulan Jaen Nueva Ecija",
-    venue: "Lorenzo Farm and Resort and Events Place",
-    date: "January 11, 2026",
-    day: "Sunday",
-    time: "3:00 PM",
-    entourageTime: "2:30 PM",
-    guestsTime: "2:30 PM",
+    location: "Cstr- Stvr San Carlos, San Carlos City",
+    venue: "Cstr- Stvr San Carlos",
+    date: "January 10, 2026",
+    day: "Saturday",
+    time: "2:00 PM",
+    entourageTime: "1:30 PM",
+    guestsTime: "1:30 PM",
   },
   reception: {
-    location: "Balai Alexandria Events Place, Brgy Dampulan Jaen Nueva Ecija",
-    venue: "Balai Alexandria Events Place",
-    date: "January 11, 2026",
-    time: "Reception to follow",
+    location: "Palau Hotel San Carlos City, San Carlos City",
+    venue: "Palau Hotel San Carlos City",
+    date: "January 10, 2026",
+    time: "6:00 PM",
   },
   dressCode: {
-    theme: "Purple & Sage Motif",
-    colors: ["#6A4F82", "#B9AACB", "#A8AF8D", "#F4F4F4", "#5B6B3C"],
+    theme: "Sage Green, Blush Pink, and Cream Motif",
+    colors: ["#848B69", "#A4AD92", "#E8BBB8", "#F3D8DD", "#F4F5F0"],
     sponsors: {
       male: "Barong, Black Pants and Leather Shoes",
-      female: "Purple/Lavender/Sage Long Gown"
+      female: "Sage Green, Blush Pink, and Cream tones Long Gown"
     },
     guests: {
       gents: "Polo & Pants (Strictly no Tshirt)",
@@ -63,8 +63,8 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     secondary: "#B9AACB",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1gFI7Q-1J85w2gwOQ-Ugkakeei2poqBM8?usp=sharing",
-    hashtag: "#CatherineAndMark2026",
+    googleDriveLink: "https://drive.google.com/drive/folders/10eC48gBM-xGcG2b2ehg-YHQ8rgknJTpb?usp=sharing",
+    hashtag: "#JemeloAndJenny2026",
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

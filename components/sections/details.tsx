@@ -67,10 +67,10 @@ export function Details() {
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.ceremony.location)}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.reception.location)}`
 
-  // Palettes (used only for color chips in attire card) - Purple & Lilac motif
-  const sponsorPalette = ["#6A4F82", "#B9AACB", "#A8AF8D"]
-  const guestPalette = ["#AB7CB0", "#D4A6D4", "#CBE0FF", "#FFC4C3", "#FFE2E6"]
-  const secondaryPalette = ["#B9AACB", "#F4F4F4", "#A8AF8D", "#6A4F82", "#5B6B3C"]
+  // Palettes (used only for color chips in attire card)
+  const sponsorPalette = ["#848B69", "#A4AD92", "#E8BBB8", "#F3D8DD", "#F4F5F0"]
+  const guestPalette = ["#848B69", "#A4AD92", "#E8BBB8", "#F3D8DD", "#F4F5F0"]
+  const secondaryPalette = ["#848B69", "#A4AD92", "#E8BBB8", "#F3D8DD", "#F4F5F0"]
 
   const openInMaps = (link: string) => {
     window.open(link, "_blank", "noopener,noreferrer")
@@ -79,14 +79,14 @@ export function Details() {
   return (
     <Section
       id="details"
-      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#6A4F82]"
+      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#848B69]"
     >
       {/* Background elements with purple & lilac motif */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Subtle gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#6A4F82]/85 via-[#B9AACB]/60 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#6A4F82]/90 via-[#B9AACB]/55 to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(185,170,203,0.22),transparent_55%)] opacity-80" />
+        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#848B69]/85 via-[#A4AD92]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#848B69]/90 via-[#A4AD92]/55 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(164,173,146,0.22),transparent_55%)] opacity-80" />
       </div>
 
       {/* Header */}
@@ -140,8 +140,8 @@ export function Details() {
               date: siteConfig.ceremony.date,
               time: siteConfig.ceremony.time,
               mapLink: ceremonyMapsLink,
-              gradient: "from-[#6A4F82] via-[#B9AACB] to-[#F4F4F4]",
-              image: "/Details/Lorenzo Farm and Resort and events Place.jpg",
+              gradient: "from-[#848B69] via-[#A4AD92] to-[#F4F5F0]",
+              image: "/Details/San_Carlos_Cathedral,_Negros_Occidental.jpg",
             },
             {
               key: "reception",
@@ -151,8 +151,8 @@ export function Details() {
               date: siteConfig.reception.date,
               time: siteConfig.reception.time,
               mapLink: receptionMapsLink,
-              gradient: "from-[#B9AACB] via-[#A8AF8D] to-[#F4F4F4]",
-              image: "/Details/Balai Alexandria Events Place Brgy Dampulan Jaen Nueva Ecija.jpg",
+              gradient: "from-[#A4AD92] via-[#A4AD92] to-[#F4F5F0]",
+              image: "/Details/Palau-Hotel.jpg",
             },
           ].map((info) => (
             <div
@@ -170,7 +170,7 @@ export function Details() {
                   sizes="100vw"
                   priority
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t from-[#6A4F82]/95 via-[#B9AACB]/65 to-transparent`} />
+                <div className={`absolute inset-0 bg-gradient-to-t from-[#848B69]/95 via-[#A4AD92]/65 to-transparent`} />
                 <div className="absolute inset-0 flex flex-col justify-end px-3 sm:px-6 pb-3 sm:pb-6 text-white">
                   <p className="style-script-regular text-xl sm:text-2xl md:text-3xl font-normal leading-none drop-shadow-md">
                     {info.label}
@@ -182,20 +182,20 @@ export function Details() {
               </div>
 
               {/* Details panel */}
-              <div className="bg-[#F4F4F4]/95 text-[#6A4F82] px-3 sm:px-6 py-4 sm:py-6 space-y-4 backdrop-blur-sm">
+              <div className="bg-[#F4F5F0]/95 text-[#848B69] px-3 sm:px-6 py-4 sm:py-6 space-y-4 backdrop-blur-sm">
                 <div className="space-y-2.5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2 text-left">
-                    <div className="rounded-md border border-[#B9AACB] bg-white/80 px-2.5 py-2 shadow-sm">
-                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#B9AACB] uppercase mb-0.5">
+                    <div className="rounded-md border border-[#A4AD92] bg-white/80 px-2.5 py-2 shadow-sm">
+                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#A4AD92] uppercase mb-0.5">
                         Date
                       </p>
-                      <p className="text-sm sm:text-base font-bold text-[#6A4F82]">{info.date}</p>
+                      <p className="text-sm sm:text-base font-bold text-[#848B69]">{info.date}</p>
                     </div>
-                    <div className="rounded-md border border-[#B9AACB] bg-white/80 px-2.5 py-2 shadow-sm">
-                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#B9AACB] uppercase mb-0.5">
+                    <div className="rounded-md border border-[#A4AD92] bg-white/80 px-2.5 py-2 shadow-sm">
+                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#A4AD92] uppercase mb-0.5">
                         {info.label}
                       </p>
-                      <p className="text-sm sm:text-base font-bold text-[#6A4F82]">{info.time}</p>
+                      <p className="text-sm sm:text-base font-bold text-[#848B69]">{info.time}</p>
                     </div>
                   </div>
                 </div>
@@ -203,14 +203,14 @@ export function Details() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-3">
                   <button
                     onClick={() => openInMaps(info.mapLink)}
-                    className="flex items-center justify-center gap-1.5 rounded-lg bg-[#6A4F82] text-white py-2.5 sm:py-3 shadow-lg hover:translate-y-[-2px] hover:bg-[#B9AACB] transition-all text-xs sm:text-sm font-semibold"
+                    className="flex items-center justify-center gap-1.5 rounded-lg bg-[#848B69] text-white py-2.5 sm:py-3 shadow-lg hover:translate-y-[-2px] hover:bg-[#A4AD92] transition-all text-xs sm:text-sm font-semibold"
                   >
                     <Navigation className="w-4 h-4" />
                     Get Directions
                   </button>
                   <button
                     onClick={() => copyToClipboard(info.location, info.key)}
-                    className="flex items-center justify-center gap-1.5 rounded-lg border border-[#B9AACB]/35 text-[#6A4F82] py-2.5 sm:py-3 hover:bg-[#B9AACB]/5 transition-all text-xs sm:text-sm font-semibold"
+                    className="flex items-center justify-center gap-1.5 rounded-lg border border-[#A4AD92]/35 text-[#848B69] py-2.5 sm:py-3 hover:bg-[#A4AD92]/5 transition-all text-xs sm:text-sm font-semibold"
                   >
                     {copiedItems.has(info.key) ? (
                       <>
@@ -244,30 +244,30 @@ export function Details() {
 
         <div className="space-y-3 sm:space-y-4">
           {/* Attire Guidelines */}
-          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(106,79,130,0.18)] p-3.5 sm:p-5 overflow-hidden">
+          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,139,105,0.18)] p-3.5 sm:p-5 overflow-hidden">
             <div className="mb-2.5 sm:mb-3 relative z-10 text-center">
-              <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#6A4F82]">
+              <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#848B69]">
                 Attire &amp; Motif
               </h4>
             </div>
 
             <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6 space-y-3 sm:space-y-4">
               <div className="text-center space-y-2 sm:space-y-3">
-                <p className="text-xs sm:text-sm font-semibold text-[#6A4F82]">
+                <p className="text-xs sm:text-sm font-semibold text-[#848B69]">
                   {siteConfig.dressCode.note}
                 </p>
-                <p className="text-xs sm:text-sm text-[#6A4F82]/90">
-                  Please dress within our wedding colors to help create a soft, elegant romantic celebration.
+                <p className="text-xs sm:text-sm text-[#848B69]/90">
+                  Please dress within our wedding color palette: Sage Green (#848B69, #A4AD92), Blush Pink (#E8BBB8, #F3D8DD), and Cream (#F4F5F0) to help create a soft, elegant romantic celebration.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <div className="border-t border-[#B9AACB] pt-4">
-                  <h5 className="font-semibold text-xs sm:text-sm text-[#6A4F82] mb-2">Principal Sponsors Attire</h5>
-                  <p className="text-[10px] sm:text-xs text-[#6A4F82]/80 mb-2">Kindly align attire below.</p>
-                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#B9AACB] bg-[#F4F4F4] mb-3">
+                <div className="border-t border-[#A4AD92] pt-4">
+                  <h5 className="font-semibold text-xs sm:text-sm text-[#848B69] mb-2">Principal Sponsors Attire</h5>
+                  <p className="text-[10px] sm:text-xs text-[#848B69]/80 mb-2">Kindly align attire below.</p>
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#A4AD92] bg-[#F4F5F0] mb-3">
                     <Image
-                      src="/Details/Principal Sponsors Attire new.png"
+                      src="/Details/sponsor attire.png"
                       alt="Principal sponsors attire guideline"
                       fill
                       className="object-contain"
@@ -276,14 +276,14 @@ export function Details() {
                     />
                   </div>
                   <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                    <p className="text-[#6A4F82]">
+                    <p className="text-[#848B69]">
                       <span className="font-semibold">Male Sponsor:</span> {siteConfig.dressCode.sponsors.male}
                     </p>
-                    <p className="text-[#6A4F82]">
+                    <p className="text-[#848B69]">
                       <span className="font-semibold">Female Sponsor:</span> {siteConfig.dressCode.sponsors.female}
                     </p>
                     <div className="pt-1">
-                      {/* <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#6A4F82] mb-1">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#848B69] mb-1">
                         Palette
                       </p>
                       <div className="flex flex-wrap gap-1.5">
@@ -295,16 +295,16 @@ export function Details() {
                             title={color}
                           />
                         ))}
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="border-t border-[#B9AACB] pt-4">
-                  <h5 className="font-semibold text-xs sm:text-sm text-[#6A4F82] mb-2">Wedding Guests</h5>
-                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#B9AACB] bg-[#F4F4F4] mb-3">
+                <div className="border-t border-[#A4AD92] pt-4">
+                  <h5 className="font-semibold text-xs sm:text-sm text-[#848B69] mb-2">Wedding Guests</h5>
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#A4AD92] bg-[#F4F5F0] mb-3">
                     <Image
-                      src="/Details/Guest Attire 3.png"
+                      src="/Details/guest attire.png"
                       alt="Guest attire guideline"
                       fill
                       className="object-contain"
@@ -313,14 +313,14 @@ export function Details() {
                     />
                   </div>
                   <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                    <p className="text-[#6A4F82] font-semibold">
+                    <p className="text-[#848B69] font-semibold">
                       Formal or Semi Formal
                     </p>
-                    <p className="text-[#6A4F82]">
-                      We Encourage you to dress according to our wedding color.
+                    <p className="text-[#848B69]">
+                      We encourage you to dress according to our wedding color palette featuring Sage Green, Blush Pink, and Cream tones.
                     </p>
                     <div className="pt-1">
-                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#6A4F82] mb-1">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#848B69] mb-1">
                         Palette
                       </p>
                       <div className="flex flex-wrap gap-1.5">
@@ -341,19 +341,19 @@ export function Details() {
           </div>
 
           {/* Arrival Time & Reception Guidelines */}
-          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(106,79,130,0.18)] p-3.5 sm:p-5 overflow-hidden">
+          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,139,105,0.18)] p-3.5 sm:p-5 overflow-hidden">
             <div className="space-y-4 sm:space-y-5">
               {/* Arrival Time */}
               <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6">
                 <div className="mb-3 sm:mb-4">
-                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#6A4F82] mb-3">
+                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#848B69] mb-3">
                     Arrival Time
                   </h4>
                   <div className="space-y-2 sm:space-y-2.5">
-                    <p className="text-xs sm:text-sm text-[#6A4F82] leading-relaxed">
-                      Kindly arrive by <span className="font-semibold text-[#B9AACB]">{siteConfig.ceremony.guestsTime}</span> so we can begin the wedding ceremony promptly at exactly <span className="font-semibold text-[#B9AACB]">{siteConfig.ceremony.time}</span>.
+                    <p className="text-xs sm:text-sm text-[#848B69] leading-relaxed">
+                      Kindly arrive by <span className="font-semibold text-[#A4AD92]">{siteConfig.ceremony.guestsTime}</span> so we can begin the wedding ceremony promptly at exactly <span className="font-semibold text-[#A4AD92]">{siteConfig.ceremony.time}</span>.
                     </p>
-                    <p className="text-xs sm:text-sm text-[#6A4F82] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#848B69] leading-relaxed">
                       Your punctuality means so much to us — and don&apos;t forget to have a light snack beforehand so you can enjoy the celebration comfortably!
                     </p>
                   </div>
@@ -363,11 +363,11 @@ export function Details() {
               {/* Reception Guidelines */}
               <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6">
                 <div className="mb-3 sm:mb-4">
-                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#6A4F82] mb-3">
+                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#848B69] mb-3">
                     Reception Guidelines
                   </h4>
                   <div className="space-y-2 sm:space-y-2.5">
-                    <p className="text-xs sm:text-sm text-[#6A4F82] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#848B69] leading-relaxed">
                       The seating will be formal, RSVP-style. That's why we're asking you to fill out this invitation form to secure your spot. Kindly do not bring plus ones unless explicitly stated in your invitation.
                     </p>
                   </div>
@@ -377,25 +377,25 @@ export function Details() {
           </div>
 
           {/* Travel & Parking - Compact, purple lilac motif */}
-          <div className="relative rounded-2xl border border-[#B9AACB]/70 bg-[#F4F4F4]/90 backdrop-blur-lg shadow-[0_18px_40px_rgba(106,79,130,0.18)] p-3.5 sm:p-5 overflow-hidden">
+          <div className="relative rounded-2xl border border-[#A4AD92]/70 bg-[#F4F5F0]/90 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,139,105,0.18)] p-3.5 sm:p-5 overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-center gap-2 mb-2.5 sm:mb-3 relative z-10">
-              <div className="p-1.5 rounded-full shadow-md bg-white/95 border border-[#B9AACB]/60">
-                <Car className="w-3.5 h-3.5 text-[#6A4F82]" />
+              <div className="p-1.5 rounded-full shadow-md bg-white/95 border border-[#A4AD92]/60">
+                <Car className="w-3.5 h-3.5 text-[#848B69]" />
               </div>
-              <h4 className="font-semibold text-xs sm:text-base text-[#6A4F82]">Parking &amp; Travel</h4>
+              <h4 className="font-semibold text-xs sm:text-base text-[#848B69]">Parking &amp; Travel</h4>
             </div>
 
             <div className="space-y-3 relative z-10">
               {/* Parking */}
-              <div className="rounded-xl p-2.5 sm:p-3 border border-[#B9AACB]/80 bg-gradient-to-br from-white/95 via-[#F4F4F4]/95 to-white/90 shadow-sm">
+              <div className="rounded-xl p-2.5 sm:p-3 border border-[#A4AD92]/80 bg-gradient-to-br from-white/95 via-[#F4F5F0]/95 to-white/90 shadow-sm">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#6A4F82]/90 text-[#F4F4F4]">
+                  <div className="p-2 rounded-lg bg-[#848B69]/90 text-[#F4F5F0]">
                     <Car className="w-4 h-4" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-[11px] sm:text-sm font-semibold text-[#6A4F82]">Parking Available</p>
-                    <p className="text-[10px] sm:text-xs text-[#6A4F82]/85">
+                    <p className="text-[11px] sm:text-sm font-semibold text-[#848B69]">Parking Available</p>
+                    <p className="text-[10px] sm:text-xs text-[#848B69]/85">
                       Parking is available at the venue. Please arrive early to find a comfortable spot.
                     </p>
                   </div>
@@ -403,14 +403,14 @@ export function Details() {
               </div>
 
               {/* Transportation */}
-              <div className="rounded-xl p-2.5 sm:p-3 border border-[#B9AACB]/80 bg-gradient-to-br from-white/95 via-[#F4F4F4]/95 to-white/90 shadow-sm">
+              <div className="rounded-xl p-2.5 sm:p-3 border border-[#A4AD92]/80 bg-gradient-to-br from-white/95 via-[#F4F5F0]/95 to-white/90 shadow-sm">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#B9AACB]/90 text-[#F4F4F4]">
+                  <div className="p-2 rounded-lg bg-[#A4AD92]/90 text-[#F4F5F0]">
                     <Navigation className="w-4 h-4" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-[11px] sm:text-sm font-semibold text-[#6A4F82]">Transportation</p>
-                    <p className="text-[10px] sm:text-xs text-[#6A4F82]/85">
+                    <p className="text-[11px] sm:text-sm font-semibold text-[#848B69]">Transportation</p>
+                    <p className="text-[10px] sm:text-xs text-[#848B69]/85">
                       Private vehicles and local transport are welcome. Coordinate with friends or family and plan your
                       route ahead of time.
                     </p>
@@ -419,27 +419,45 @@ export function Details() {
               </div>
 
               {/* Tips */}
-              <div className="rounded-xl p-2.5 sm:p-3 border border-[#B9AACB]/75 bg-gradient-to-br from-white/95 via-[#F4F4F4]/95 to-white/90">
-                <p className="text-[11px] sm:text-sm font-semibold mb-2 flex items-center gap-2 text-[#6A4F82]">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#6A4F82]/10 text-[#6A4F82]">
+              <div className="rounded-xl p-2.5 sm:p-3 border border-[#A4AD92]/75 bg-gradient-to-br from-white/95 via-[#F4F5F0]/95 to-white/90">
+                <p className="text-[11px] sm:text-sm font-semibold mb-2 flex items-center gap-2 text-[#848B69]">
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#848B69]/10 text-[#848B69]">
                     <MapPin className="w-3.5 h-3.5" />
                   </span>
                   Quick Tips
                 </p>
-                <ul className="text-[10px] sm:text-xs space-y-1 text-[#6A4F82]/90">
+                <ul className="text-[10px] sm:text-xs space-y-1 text-[#848B69]/90">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B9AACB] mt-0.5">•</span>
+                    <span className="text-[#A4AD92] mt-0.5">•</span>
                     <span>Plan your route ahead to avoid unexpected delays.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B9AACB] mt-0.5">•</span>
+                    <span className="text-[#A4AD92] mt-0.5">•</span>
                     <span>Please avoid walking during the ceremony. Approach the coordinator or wait to be guided.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B9AACB] mt-0.5">•</span>
+                    <span className="text-[#A4AD92] mt-0.5">•</span>
                     <span>Coordinate carpooling with friends or family when possible.</span>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Child-Free Occasion Notice */}
+        <div className="relative z-10 mb-4 sm:mb-7 max-w-4xl mx-auto px-3 sm:px-5 mt-6 sm:mt-8">
+          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,139,105,0.18)] p-3.5 sm:p-5 overflow-hidden">
+            <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6">
+              <div className="mb-3 sm:mb-4">
+                <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#848B69] mb-3">
+                  Child-Free Occasion
+                </h4>
+                <div className="space-y-2 sm:space-y-2.5">
+                  <p className="text-xs sm:text-sm text-[#848B69] leading-relaxed">
+                    While we adore your children, we kindly ask that our wedding be a child-free occasion so everyone can relax and enjoy the evening with us.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -519,7 +537,7 @@ export function Details() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-0" />
 
               <Image
-                src={showImageModal === "ceremony" ? "/Details/RELIGIOUS-Daraga_Church,_Albay.jpg" : "/Details/Hotel St. ellis.jpg"}
+                src={showImageModal === "ceremony" ? "/Details/San_Carlos_Cathedral,_Negros_Occidental.jpg" : "/Details/Palau-Hotel.jpg"}
                 alt={showImageModal === "ceremony" ? siteConfig.ceremony.location : siteConfig.reception.location}
                 fill
                 className="object-contain p-6 sm:p-8 md:p-10 transition-transform duration-700 group-hover:scale-105 z-10"

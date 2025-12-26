@@ -108,13 +108,13 @@ export function GuestMessages({ guests = [] }: GuestMessagesProps) {
       )}
 
       {/* Info Card */}
-      <div className="bg-gradient-to-br from-[#FFF8F0] to-[#F5F5F0] border border-[#E5E7EB] rounded-xl p-6">
+      <div className="bg-gradient-to-br from-[#F4F5F0] to-[#F4F5F0] border border-[#E5E7EB] rounded-xl p-6">
         <div className="flex items-start gap-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-[#8B6F47] to-[#6B5335] rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-12 h-12 bg-gradient-to-br from-[#848B69] to-[#848B69] rounded-xl flex items-center justify-center flex-shrink-0">
             <Heart className="h-6 w-6 text-white" />
           </div>
           <div className="flex-1">
-            <h3 className="font-semibold text-[#6B4423] text-lg mb-2">Messages from Your Guests</h3>
+            <h3 className="font-semibold text-[#848B69] text-lg mb-2">Messages from Your Guests</h3>
             <p className="text-sm text-[#6B7280]">
               Read heartfelt messages and well wishes from your guests. These messages were submitted through your wedding website.
             </p>
@@ -131,7 +131,7 @@ export function GuestMessages({ guests = [] }: GuestMessagesProps) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search messages by guest name or content..."
-            className="w-full pl-10 pr-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none transition-all"
+            className="w-full pl-10 pr-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none transition-all"
           />
         </div>
       </div>
@@ -166,7 +166,7 @@ export function GuestMessages({ guests = [] }: GuestMessagesProps) {
             >
               {/* Header */}
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[#D4B5A0] to-[#8B6F47] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#D4B5A0] to-[#848B69] rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-semibold text-lg">
                     {msg.name.charAt(0).toUpperCase()}
                   </span>
@@ -183,13 +183,13 @@ export function GuestMessages({ guests = [] }: GuestMessagesProps) {
               </div>
 
               {/* Message Content */}
-              <div className="bg-gradient-to-br from-[#FFF8F0] to-[#F5F5F0] rounded-xl p-4 border border-[#E5E7EB]">
+              <div className="bg-gradient-to-br from-[#F4F5F0] to-[#F4F5F0] rounded-xl p-4 border border-[#E5E7EB]">
                 <div className="flex gap-3">
                   <div className="flex-shrink-0 mt-1">
-                    <MessageSquare className="h-5 w-5 text-[#A67C52]" />
+                    <MessageSquare className="h-5 w-5 text-[#848B69]" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-[#6B4423] leading-relaxed whitespace-pre-wrap">{msg.message}</p>
+                    <p className="text-[#848B69] leading-relaxed whitespace-pre-wrap">{msg.message}</p>
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export function GuestMessages({ guests = [] }: GuestMessagesProps) {
         <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
             <div>
-              <div className="text-3xl font-bold text-[#8B6F47] mb-1">
+              <div className="text-3xl font-bold text-[#848B69] mb-1">
                 {messages.length}
               </div>
               <div className="text-sm text-[#6B7280]">Total Messages</div>

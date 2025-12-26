@@ -208,7 +208,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search guests by name or email..."
-                className="w-full pl-10 pr-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none transition-all"
+                className="w-full pl-10 pr-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none transition-all"
               />
             </div>
           </div>
@@ -218,7 +218,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
               setEditingGuest(null)
               setFormData({ Name: "", Email: "", RSVP: "", Guest: "1", Message: "" })
             }}
-            className="bg-gradient-to-r from-[#8B6F47] to-[#6B5335] hover:from-[#6B5335] hover:to-[#8B6F47] text-white"
+            className="bg-gradient-to-r from-[#848B69] to-[#848B69] hover:from-[#848B69] hover:to-[#848B69] text-white"
           >
             <Plus className="h-4 w-4 mr-2" />
             Add Guest
@@ -298,7 +298,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                       <div className="flex items-center justify-center gap-2">
                         <button
                           onClick={() => handleEditClick(guest)}
-                          className="p-2 text-[#6B7280] hover:bg-[#F9FAFB] hover:text-[#6B4423] rounded-lg transition-colors"
+                          className="p-2 text-[#6B7280] hover:bg-[#F9FAFB] hover:text-[#848B69] rounded-lg transition-colors"
                           title="Edit guest"
                         >
                           <Edit2 className="h-4 w-4" />
@@ -347,7 +347,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                   type="text"
                   value={formData.Name}
                   onChange={(e) => setFormData({ ...formData, Name: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none"
+                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none"
                   placeholder="Enter name"
                 />
               </div>
@@ -358,7 +358,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                   type="email"
                   value={formData.Email}
                   onChange={(e) => setFormData({ ...formData, Email: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none"
+                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none"
                   placeholder="Enter email"
                 />
               </div>
@@ -368,7 +368,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                 <select
                   value={formData.RSVP}
                   onChange={(e) => setFormData({ ...formData, RSVP: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none"
+                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none"
                 >
                   <option value="">Pending</option>
                   <option value="Yes">Attending</option>
@@ -384,7 +384,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                   min="1"
                   value={formData.Guest}
                   onChange={(e) => setFormData({ ...formData, Guest: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none"
+                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none"
                   placeholder="1"
                 />
               </div>
@@ -394,7 +394,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
                 <textarea
                   value={formData.Message}
                   onChange={(e) => setFormData({ ...formData, Message: e.target.value })}
-                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#A67C52] focus:border-transparent outline-none"
+                  className="w-full px-4 py-2 border border-[#E5E7EB] rounded-lg focus:ring-2 focus:ring-[#848B69] focus:border-transparent outline-none"
                   placeholder="Enter message"
                   rows={3}
                 />
@@ -415,7 +415,7 @@ export function GuestListManagement({ guests, onRefresh, isLoading }: GuestListM
               </Button>
               <Button
                 onClick={editingGuest ? handleUpdateGuest : handleAddGuest}
-                className="flex-1 bg-gradient-to-r from-[#8B6F47] to-[#6B5335] hover:from-[#6B5335] hover:to-[#8B6F47] text-white"
+                className="flex-1 bg-gradient-to-r from-[#848B69] to-[#848B69] hover:from-[#848B69] hover:to-[#848B69] text-white"
               >
                 {editingGuest ? "Update" : "Add"} Guest
               </Button>

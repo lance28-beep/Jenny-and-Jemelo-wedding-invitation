@@ -22,7 +22,7 @@ export function WeddingDetails() {
       </div>
 
       {/* Hero Card */}
-      <div className="bg-gradient-to-br from-[#8B6F47] to-[#6B5335] rounded-2xl p-8 shadow-lg text-white">
+      <div className="bg-gradient-to-br from-[#848B69] to-[#848B69] rounded-2xl p-8 shadow-lg text-white">
         <div className="flex items-center gap-4 mb-4">
           <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
             <Heart className="h-8 w-8 text-white" />
@@ -45,8 +45,8 @@ export function WeddingDetails() {
         {/* Couple Information */}
         <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-[#FFF8F0] rounded-lg flex items-center justify-center">
-              <Users className="h-5 w-5 text-[#8B6F47]" />
+            <div className="w-10 h-10 bg-[#F4F5F0] rounded-lg flex items-center justify-center">
+              <Users className="h-5 w-5 text-[#848B69]" />
             </div>
             <h3 className="text-xl font-bold text-[#111827]">The Couple</h3>
           </div>
@@ -71,8 +71,8 @@ export function WeddingDetails() {
         {/* Event Details */}
         <div className="bg-white rounded-xl shadow-sm border border-[#E5E7EB] p-6">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-[#FFF8F0] rounded-lg flex items-center justify-center">
-              <Calendar className="h-5 w-5 text-[#8B6F47]" />
+            <div className="w-10 h-10 bg-[#F4F5F0] rounded-lg flex items-center justify-center">
+              <Calendar className="h-5 w-5 text-[#848B69]" />
             </div>
             <h3 className="text-xl font-bold text-[#111827]">Event Details</h3>
           </div>
@@ -118,7 +118,7 @@ export function WeddingDetails() {
                 href={siteConfig.ceremony.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-[#8B6F47] hover:text-[#6B5335] font-medium transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-[#848B69] hover:text-[#848B69] font-medium transition-colors"
               >
                 <MapPin className="h-4 w-4" />
                 View on Google Maps
@@ -148,7 +148,7 @@ export function WeddingDetails() {
                 href={siteConfig.reception.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-[#8B6F47] hover:text-[#6B5335] font-medium transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-[#848B69] hover:text-[#848B69] font-medium transition-colors"
               >
                 <MapPin className="h-4 w-4" />
                 View on Google Maps
@@ -176,7 +176,7 @@ export function WeddingDetails() {
                 </label>
                 <a
                   href={`tel:${siteConfig.contact.groomPhone}`}
-                  className="text-[#8B6F47] hover:text-[#6B5335] font-medium transition-colors"
+                  className="text-[#848B69] hover:text-[#848B69] font-medium transition-colors"
                 >
                   {siteConfig.contact.groomPhone}
                 </a>
@@ -192,7 +192,7 @@ export function WeddingDetails() {
                 </label>
                 <a
                   href={`tel:${siteConfig.contact.bridePhone}`}
-                  className="text-[#8B6F47] hover:text-[#6B5335] font-medium transition-colors"
+                  className="text-[#848B69] hover:text-[#848B69] font-medium transition-colors"
                 >
                   {siteConfig.contact.bridePhone}
                 </a>
@@ -206,7 +206,7 @@ export function WeddingDetails() {
                 <label className="text-sm font-medium text-[#6B7280] block">Email</label>
                 <a
                   href={`mailto:${siteConfig.contact.email}`}
-                  className="text-[#8B6F47] hover:text-[#6B5335] font-medium transition-colors break-all"
+                  className="text-[#848B69] hover:text-[#848B69] font-medium transition-colors break-all"
                 >
                   {siteConfig.contact.email}
                 </a>
@@ -217,25 +217,25 @@ export function WeddingDetails() {
       </div>
 
       {/* Additional Information */}
-      <div className="bg-gradient-to-br from-[#FFF8F0] to-[#F5F5F0] rounded-xl border border-[#E5E7EB] p-6">
+      <div className="bg-gradient-to-br from-[#F4F5F0] to-[#F4F5F0] rounded-xl border border-[#E5E7EB] p-6">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 bg-gradient-to-br from-[#8B6F47] to-[#6B5335] rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-gradient-to-br from-[#848B69] to-[#848B69] rounded-lg flex items-center justify-center">
             <ImageIcon className="h-5 w-5 text-white" />
           </div>
-          <h3 className="text-xl font-bold text-[#6B4423]">Quick Info</h3>
+          <h3 className="text-xl font-bold text-[#848B69]">Quick Info</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-white/60 rounded-lg p-4 backdrop-blur-sm">
             <label className="text-sm font-medium text-[#6B7280] block mb-1">Theme</label>
-            <p className="text-[#6B4423] font-semibold">{siteConfig.theme || "Classic Elegance"}</p>
+            <p className="text-[#848B69] font-semibold">{siteConfig.theme || "Classic Elegance"}</p>
           </div>
           <div className="bg-white/60 rounded-lg p-4 backdrop-blur-sm">
             <label className="text-sm font-medium text-[#6B7280] block mb-1">Dress Code</label>
-            <p className="text-[#6B4423] font-semibold">{siteConfig.dressCode || "Formal Attire"}</p>
+            <p className="text-[#848B69] font-semibold">{siteConfig.dressCode || "Formal Attire"}</p>
           </div>
           <div className="bg-white/60 rounded-lg p-4 backdrop-blur-sm">
             <label className="text-sm font-medium text-[#6B7280] block mb-1">Hashtag</label>
-            <p className="text-[#8B6F47] font-semibold">{siteConfig.hashtag || "#ForeverTogether"}</p>
+            <p className="text-[#848B69] font-semibold">{siteConfig.hashtag || "#ForeverTogether"}</p>
           </div>
         </div>
       </div>
