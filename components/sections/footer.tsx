@@ -108,7 +108,7 @@ export function Footer() {
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 opacity-95">
             <Image
               src="/weddingTimeline/coupleImage-removebg.png"
-              alt={`${siteConfig.couple.brideNickname} & ${siteConfig.couple.groomNickname} illustration`}
+              alt={`${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} illustration`}
               fill
               className="object-contain"
               priority={false}
@@ -128,7 +128,7 @@ export function Footer() {
           <p
             className={`${cormorant.className} tracking-[0.25em] sm:tracking-[0.3em] text-xs sm:text-sm md:text-base text-white/95 uppercase`}
           >
-            {siteConfig.couple.brideNickname} & {siteConfig.couple.groomNickname}
+            {siteConfig.couple.groomNickname} & {siteConfig.couple.brideNickname}
           </p>
           <p
             className={`${cormorant.className} text-sm sm:text-base md:text-lg text-white/90 mt-1 sm:mt-2`}

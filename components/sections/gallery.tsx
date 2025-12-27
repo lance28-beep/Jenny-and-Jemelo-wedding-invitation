@@ -19,7 +19,7 @@ const windSong = WindSong({
   weight: "400",
 })
 
-const galleryHashtag = "#JemeloAndJennyWedding"
+const galleryHashtag = "#ANNforgettableDayWithJemelo"
 
 const galleryItems = [
   { image: "/mobile-background/couple (1).JPG", text: " " },  
@@ -33,7 +33,7 @@ const galleryItems = [
 
 export function Gallery() {
   const { brideNickname, groomNickname } = siteConfig.couple
-  const coupleDisplayName = `${brideNickname} & ${groomNickname}`
+  const coupleDisplayName = `${groomNickname} & ${brideNickname}`
   const [selectedImage, setSelectedImage] = useState<(typeof galleryItems)[0] | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
@@ -155,7 +155,7 @@ export function Gallery() {
         </div>
 
         <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-white/95 font-light max-w-xl mx-auto leading-relaxed mt-3`}>
-          Beautiful frames capturing the journey of Jemelo and Jenny — each photograph a precious memory of laughter, love, and the moments that led us to forever.
+          Beautiful frames capturing the journey of Jemelo and An-An — each photograph a precious memory of laughter, love, and the moments that led us to forever.
         </p>
 
         <div className="flex items-center justify-center gap-2 mt-6">

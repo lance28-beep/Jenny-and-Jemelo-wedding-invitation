@@ -256,9 +256,6 @@ export function Details() {
                 <p className="text-xs sm:text-sm font-semibold text-[#848B69]">
                   {siteConfig.dressCode.note}
                 </p>
-                <p className="text-xs sm:text-sm text-[#848B69]/90">
-                  Please dress within our wedding color palette: Sage Green (#848B69, #A4AD92), Blush Pink (#E8BBB8, #F3D8DD), and Cream (#F4F5F0) to help create a soft, elegant romantic celebration.
-                </p>
               </div>
 
               <div className="space-y-4">

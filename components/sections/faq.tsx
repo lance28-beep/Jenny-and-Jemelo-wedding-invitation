@@ -65,7 +65,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I take photos and videos during the ceremony?",
     answer:
-      `We have a professional photographer and videographer capturing our special moments. We kindly ask that you keep your phones on silent and refrain from taking photos during the ceremony. However, we'd love to see your photos and videos from the reception! Please check the Snap & Share section to upload them to our Google Drive folder. Don't forget to use our wedding hashtags: ${siteConfig.snapShare.hashtag}, #JemeloAndJennyWedding, and #JemeloJennyForever when sharing on social media!`,
+      `We have a professional photographer and videographer capturing our special moments. We kindly ask that you keep your phones on silent and refrain from taking photos during the ceremony. However, we'd love to see your photos and videos from the reception! Please check the Snap & Share section to upload them to our Google Drive folder. Don't forget to use our wedding hashtags: #ANNforgettableDayWithJemelo, #ToANNfinittyAndBeyondWithJemelo, and #InilaANNparaKayJemelo when sharing on social media!`,
   },
   {
     question: "What if I have dietary restrictions or allergies?",

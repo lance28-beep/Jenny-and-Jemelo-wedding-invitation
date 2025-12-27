@@ -91,8 +91,8 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               <div className="relative w-28 sm:w-40 h-28 sm:h-40 brightness-0 invert">
                 <div className="absolute inset-0 blur-xl bg-white/30" />
                 <Image
-                  src="/monogram/Monogram.png"
-                  alt="Jemelo & Jenny Monogram"
+                  src="/monogram/monogramnew.png"
+                  alt="Jemelo & An-An Monogram"
                   fill
                   className="object-contain drop-shadow-[0_0_25px_rgba(255,255,255,0.5)]"
                   priority
@@ -147,7 +147,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
             className="text-base sm:text-xl tracking-[0.12em] sm:tracking-[0.15em] text-white/90 mb-4 sm:mb-6"
             style={{ fontFamily: '"Cinzel", serif', fontWeight: 400 }}
           >
-            Jemelo & Jenny
+            Jemelo & An-An
           </p>
 
           {/* Elegant progress bar - responsive */}
